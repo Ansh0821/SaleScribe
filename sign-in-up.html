@@ -27,7 +27,7 @@
         </ul>
       </div>
       <div class="right">
-        <a href="sign-in-up.html">
+        <a href="signup.html">
           <button type="button" class="btn1"><span>Sign In</span></button>
           <button type="button" class="btn2">Sign Up</button>
         </a>
@@ -35,18 +35,18 @@
     </nav>
 
     <div class="container">
-      <div class="leftimg">
+      <div class="leftimg" >
         <img src="/Mobile login-rafiki.png" alt="" />
       </div>
-      <div class="rightform">
+      <div class="rightform" style="height: 500px;">
         <div class="visible" id="current" style="display: flex">
-          <button id="btn1" onclick="toggleContent()">SignIn as Admin</button
-          ><button id="btn2" onclick="toggleContent()">SignIn as Seller</button
-          ><button id="btn3" onclick="toggleContent()">
+          <!-- <button id="btn1" onclick="showSignInPage()">SignIn as Admin</button
+          ><button id="btn2" onclick="showSignInPage()">SignIn as Seller</button
+          ><button id="btn3" onclick="showSignInPage()">
             SignIn as Customer
-          </button>
+          </button> -->
         </div>
-        <div class="hidden" style="display: none" id="next">
+        <div class="hidden" id="signInPage">
           <div class="signin">
             <h1>Sign in to your account</h1>
             <label for="signin-email">Email:</label>
@@ -54,11 +54,17 @@
             <label for="signin-password">Password:</label>
             <input type="password" id="signin-password" required />
             <div class="btn">
-              <button type="submit">Sign In</button>
+              <div class="b1">
+                <button type="submit">Sign-In as Seller</button>
+                <button type="submit">Sign-In as Customer</button>
+              </div>
+              <div class="b2">
+                <button type="submit">Sign-In as Admin</button>
+              </div>
             </div>
             <div class="text">
               <span>Don't have an account?</span>
-              <a href="#">Sign Up</a>
+              <a href="signup.html">Sign Up</a>
             </div>
             <div class="last">
               <p>Or sign-in using</p>
@@ -78,19 +84,6 @@
         </div>
       </div>
 
-      <div class="signup" style="display: none">
-        <h2>Sign Up</h2>
-        <label for="signup-name">Name:</label>
-        <input type="text" id="signup-name" required />
-        <label for="signup-email">Email:</label>
-        <input type="email" id="signup-email" required />
-        <label for="signup-password">Password:</label>
-        <input type="password" id="signup-password" required />
-        <label for="signup-password">Confirm Password:</label>
-        <input type="password" id="signup-password" required />
-        <button type="submit">Sign Up</button>
-      </div>
-    </div>
     <footer>
       <p>&copy; 2023 SaleScribe. All rights reserved.</p>
     </footer>

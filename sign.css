@@ -139,6 +139,7 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
+  /* position: absolute; */
 }
 
 .rightform {
@@ -148,10 +149,15 @@ html {
   /* z-index: -5; */
   padding: 15px 20px;
   border-radius: 9px;
-  height: 500px;
+  height: 600px;
+  justify-content:center;
+  align-items: center;
   /* margin: 45px 10px; */
 }
-
+.b2{
+  display: flex;
+  justify-content: center;
+}
 .rightform h1 {
   text-align: center;
   font-size: 2.2rem;
@@ -166,9 +172,22 @@ html {
   padding: 1px 2px;
 }
 
+.signin{
+  display: flex;
+  flex-direction: column;
+}
+
+.signup{
+  display: flex;
+  flex-direction: column;
+}
+
+.b1{
+  display: flex;
+}
 .rightform input,
 textarea {
-  width: 60vb;
+  width: 90%;
   padding: 10px;
   margin-top: 2px;
   margin-bottom: 9px;
@@ -184,10 +203,10 @@ textarea {
 .rightform button {
   /* display: flex;
   flex-direction: column; */
-  width: 15vb;
+  width: 27vb;
   font-size: 1.2rem;
   padding: 10px 5px;
-  margin: 20px 8px;
+  margin: 8px 8px;
   /* margin-bottom: 10px; */
   color: #849d88;
   border: none;
@@ -206,6 +225,7 @@ textarea {
 
 .text {
   display: flex;
+  margin: 2px 1px;
   justify-content: center;
   font-size: 1.2rem;
   color: #010c09;
@@ -242,6 +262,8 @@ textarea {
 
 .lim button {
   background: none;
+  margin: 2px 0px;
+  width: 10vb;
 }
 
 .lim button:hover {
@@ -269,7 +291,7 @@ footer::before {
   height: 25px;
 }
 
-.visible{
+.visible {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -277,8 +299,8 @@ footer::before {
   align-items: center;
 }
 
-.visible button{
-  background-color:#7aa29f;
-  color: #010c09 ;
+.visible button {
+  background-color: #7aa29f;
+  color: #010c09;
   width: 30vb;
 }
