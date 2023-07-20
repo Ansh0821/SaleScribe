@@ -264,8 +264,8 @@ html {
 footer {
   display: flex;
   width: 100%;
-  /* position: absolute; */
-  bottom: 0px;
+  position: relative;
+  bottom: -2.8rem;
   font-size: 1.3rem;
   justify-content: center;
 }
@@ -306,13 +306,13 @@ footer::before {
   /* width: 80%; */
 }
 
-.customer-info {
+.customer-details {
   margin: 4px 1px;
 }
 
-.customer-info label {
+.customer-details label {
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 1px 2px;
 }
 
