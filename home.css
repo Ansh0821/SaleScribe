@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --navbar-height: 60px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+
+.left {
+  width: 33%;
+}
+.center {
+  width: 33%;
+}
+.right {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar::before {
+  content: "";
+  background-color: #231d37;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  margin: 8px 3px;
+}
+
+#logo p {
+  width: fit-content;
+  color: #9de0e7;
+  font-size: 2.3rem;
+  padding: 0px 15px;
+  font-family: "Lugrasimo", cursive;
+  margin-right: 10px;
+  border: 3px outset #7aa29f;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #849d88;
+  transform: scale(1.05);
+  transition-duration: 175ms;
+  background-color: #231d37;
+}
+
+#navbar ul li a:active {
+  color: #849d88;
+  text-decoration: underline;
+}
+
+#navbar button {
+  display: inline-block;
+  background-color: silver;
+  border: none;
+  color: #263c3d;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 2px 9px;
+  border-radius: 21px;
+  font-family: 'Mulish', sans-serif;
+  cursor: pointer;
+}
+
+/* #navbar btn1:hover{
+  background-color: aliceblue;
+  color: #9bb17aeb;
+  font-size: 25px;
+} */
+
+#navbar button:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+  background-color: aliceblue;
+  color: #9bb17aeb;
+  /* font-size: 25px; */
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 5px;
+  /* height: 300px; */
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("/5665273_57788.jpg") no-repeat center center/cover;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.intro {
+  background: rgba(255, 255, 255, 0.65);
+  z-index: -5;
+  padding: 5px;
+  border-radius: 9px;
+  margin: 45px 10px;
+  /* margin-top: 150px; */
+  /* position: absolute; */
+}
+#home h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-family: "Lugrasimo", cursive;
+  color: #010c09;
+}
+
+#home p {
+  color: #010c09;
+  display: flex;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  padding: 2px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 30px;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.65);
+  z-index: -5;
+  padding: 8px;
+  border-radius: 9px;
+  width: 50%;
+  /* position: absolute; */
+  transition: transform 0.3s ease-in;
+}
+
+#home h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #010c09;
+  font-family: "Lugrasimo", cursive;
+}
+
+.extra {
+  display: flex;
+}
+.features li {
+  color: #010c09;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  padding: 2px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 30px;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.65);
+  z-index: -5;
+  padding: 8px;
+  border-radius: 9px;
+  width: 50%;
+  /* position: absolute; */
+  transition: transform 0.3s ease-in;
+  /* opacity: 1.4; */
+}
+
+.benefits li {
+  color: #010c09;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  padding: 2px;
+}
+
+.features:hover,
+.benefits:hover {
+  transform: scale(1.05);
+}
+
+.btn3 {
+  display: flex;
+}
+
+#home button {
+  background-color: silver;
+  color: #496d84;
+  font-size: 1.8rem;
+  font-family: 'Mulish', sans-serif;
+  padding: 6px 9px;
+  border: 2px inset #259daf;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#home button:hover {
+  transform: translateY(5px);
+  transition-duration: 300ms;
+  background-color: aliceblue;
+  color: #9bb17aeb;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  font-size: 1.3rem;
+  justify-content: center;
+}
+#footer {
+  color: white;
+  position: relative;
+}
+footer::before{
+  content: "";
+  background-color: silver;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  height: 25px;
+}
