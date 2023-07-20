@@ -1,26 +1,13 @@
-function toggleContent(){
-    const current = document.getElementsById('current');
-    const next = document.getElementsById('next');
-    const signButton = document.getElementById('btn1');
+function toggleContent() {
+  const currentContent = document.getElementById("current");
+  const nextContent = document.getElementById("next");
 
-    if (current.style.display != 'flex') {
-        current.style.display = 'flex';
-        next.style.display = 'none';
-        // next.classList.remove('hidden');
-        // next.classList.add('visible');
-
-        // signButton.textContent = 'Show Current Content';
-    }
-    else{
-
-        current.style.display ='none';
-        next.style.display = 'flex';
-        // current.classList.remove('hidden');
-        // current.classList.add('visible');
-
-        // next.classList.remove('visible');
-        // next.classList.add('hidden');
-
-        // signButton.textContent = 'Show New Content';
-    }
+  // Toggle the visibility of currentContent and nextContent
+  if (currentContent.style.display === "flex") {
+    currentContent.style.display = "none";
+    nextContent.style.display = "flex";
+  } else {
+    currentContent.style.display = "flex";
+    nextContent.style.display = "none";
+  }
 }
