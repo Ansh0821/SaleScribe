@@ -147,7 +147,7 @@ html {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.65);
   /* z-index: -5; */
-  padding: 15px 20px;
+  padding: 12px 20px;
   border-radius: 9px;
   height: 600px;
   justify-content:center;
@@ -303,4 +303,7 @@ footer::before {
   background-color: #7aa29f;
   color: #010c09;
   width: 30vb;
+}
+body{
+  overflow: hidden;
 }

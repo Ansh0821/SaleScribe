@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="customer.js"></script>
+    <script src="customerDatabase.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -43,16 +44,19 @@
             <img src="/icons8-search-64.png" alt="SearchIcon" title="Search" />
           </button>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Contact Info</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-        </table>
+        <div class="tablewrapper">
+          <table id="customersTable">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Contact Info</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
       <div class="tablewrapper"></div>
 

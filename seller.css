@@ -377,3 +377,73 @@ textarea {
   background-color: #263c3d;
   color: #9bb17aeb;
 }
+
+#add-seller-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.tablewrapper{
+  display: flex;
+  padding: 2px 5px;
+}
+
+#sellersTable{
+  display: inline-block;
+  /* padding: 2pxpx; */
+  margin: 2px 10px;
+  justify-content: space-around;
+  align-items:center;
+  width: 100%;
+}
+
+#sellersTable thead{
+  display: flex;
+    /* padding: 2px 2px;
+    margin: 2px 2px; */
+  width: 100%;
+}
+
+tbody{
+  display: flex;
+  flex-direction: column;
+  /* padding: 2px 2px;
+  margin: 2px 2px; */
+  width: 100%;
+}
+
+.tablewrapper{
+  width: 100%;
+}
+
+#sellersTable tr{
+  display: flex;
+  padding: 2px 5px;
+  margin: 2px 10px;
+  width: 100%;
+}
+
+#sellersTable td {
+  display: flex;
+  text-align: left;
+  /* padding: 2px px; */
+  margin: 0px 40px;
+  width: 25%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.05rem;
+}
+
+
+#sellersTable th{
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: left;
+  padding: 2px 25px;
+  margin: 2px 25px;
+  width: 25%;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.05rem;
+}
+body{
+  /* overflow: hidden; */
+}
